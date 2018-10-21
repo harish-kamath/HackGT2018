@@ -89,7 +89,7 @@ class ViewController: UIViewController {
   override func viewWillAppear(_ animated: Bool) {
     let s  = self.presentingViewController as! SSDViewController
     
-    
+    if(s.lang.abbreviation != "en"){
     let p = ROGoogleTranslateParams(source: "en",
                                     target: s.lang.abbreviation,
                                     text: self.label)
@@ -102,6 +102,7 @@ class ViewController: UIViewController {
       DispatchQueue.main.async {
         self.setText()
       }
+    }
     }
     
     IBLabel.isHidden = !(s.words[label]! <= 0)

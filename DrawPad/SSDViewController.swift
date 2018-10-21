@@ -17,7 +17,7 @@ class SSDViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferD
   var lang = Language(name: "Spanish", abbreviation: "es")
   
   
-  let languages = [Language(name: "Irish", abbreviation: "ga"), Language(name: "Italian", abbreviation: "it"), Language(name: "Spanish", abbreviation: "es"), Language(name: "German", abbreviation: "de"), Language(name: "Turkish", abbreviation: "tr"), Language(name: "Vietnamese", abbreviation: "vi"), Language(name: "Swahili", abbreviation: "sw"), Language(name: "Portuguese", abbreviation: "pt")]
+  let languages = [Language(name: "English", abbreviation: "en"),Language(name: "Irish", abbreviation: "ga"), Language(name: "Italian", abbreviation: "it"), Language(name: "Spanish", abbreviation: "es"), Language(name: "German", abbreviation: "de"), Language(name: "Turkish", abbreviation: "tr"), Language(name: "Vietnamese", abbreviation: "vi"), Language(name: "Swahili", abbreviation: "sw"), Language(name: "Portuguese", abbreviation: "pt")]
   
   var words: [String: Int] =  Dictionary(uniqueKeysWithValues: """
 ???
