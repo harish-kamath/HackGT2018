@@ -30,6 +30,24 @@
 		A744E3FB217C85BB00048AE3 /* Vocapture.png in Resources */ = {isa = PBXBuildFile; fileRef = A744E3FA217C85BB00048AE3 /* Vocapture.png */; };
 		A744E3FD217C866800048AE3 /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = A744E3FC217C866800048AE3 /* camera.png */; };
 		A744E3FF217C8A3400048AE3 /* eyeBot.png in Resources */ = {isa = PBXBuildFile; fileRef = A744E3FE217C8A3300048AE3 /* eyeBot.png */; };
+		A744E401217C8F0400048AE3 /* ROGoogleTranslate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A744E400217C8F0400048AE3 /* ROGoogleTranslate.swift */; };
+		A744E60F217CA04100048AE3 /* TCPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A744E607217CA04100048AE3 /* TCPickerView.swift */; };
+		A744E610217CA04100048AE3 /* TCPickerViewLightTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A744E609217CA04100048AE3 /* TCPickerViewLightTheme.swift */; };
+		A744E611217CA04100048AE3 /* TCPickerViewDarkTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A744E60A217CA04100048AE3 /* TCPickerViewDarkTheme.swift */; };
+		A744E612217CA04100048AE3 /* TCPickerViewThemeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A744E60B217CA04100048AE3 /* TCPickerViewThemeType.swift */; };
+		A744E613217CA04100048AE3 /* TCPickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A744E60C217CA04100048AE3 /* TCPickerTableViewCell.swift */; };
+		A744E614217CA04100048AE3 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A744E60E217CA04100048AE3 /* Media.xcassets */; };
+		A744E621217CA46D00048AE3 /* GTProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A744E616217CA46D00048AE3 /* GTProgressBar.swift */; };
+		A744E622217CA46D00048AE3 /* HorizontalLabelPositionFrameCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A744E617217CA46D00048AE3 /* HorizontalLabelPositionFrameCalculator.swift */; };
+		A744E623217CA46D00048AE3 /* FrameCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A744E618217CA46D00048AE3 /* FrameCalculator.swift */; };
+		A744E624217CA46D00048AE3 /* GTProgressBarLabelPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A744E619217CA46D00048AE3 /* GTProgressBarLabelPosition.swift */; };
+		A744E625217CA46D00048AE3 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = A744E61A217CA46D00048AE3 /* .gitkeep */; };
+		A744E626217CA46D00048AE3 /* GTProgressBarDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A744E61B217CA46D00048AE3 /* GTProgressBarDirection.swift */; };
+		A744E627217CA46D00048AE3 /* VerticalLabelPositionFrameCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A744E61C217CA46D00048AE3 /* VerticalLabelPositionFrameCalculator.swift */; };
+		A744E628217CA46D00048AE3 /* GTProgressBarCornerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A744E61D217CA46D00048AE3 /* GTProgressBarCornerType.swift */; };
+		A744E629217CA46D00048AE3 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A744E61E217CA46D00048AE3 /* UIViewExtensions.swift */; };
+		A744E62A217CA46D00048AE3 /* GTProgressBarOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A744E61F217CA46D00048AE3 /* GTProgressBarOrientation.swift */; };
+		A744E62B217CA46D00048AE3 /* UILabelExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A744E620217CA46D00048AE3 /* UILabelExtensions.swift */; };
 		E1941C5720B53CB4004A2217 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1941C5620B53CB4004A2217 /* AppDelegate.swift */; };
 		E1941C5920B53CB4004A2217 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1941C5820B53CB4004A2217 /* ViewController.swift */; };
 		E1941C5C20B53CB4004A2217 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1941C5A20B53CB4004A2217 /* Main.storyboard */; };
@@ -64,6 +82,24 @@
 		A744E3FA217C85BB00048AE3 /* Vocapture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Vocapture.png; sourceTree = "<group>"; };
 		A744E3FC217C866800048AE3 /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
 		A744E3FE217C8A3300048AE3 /* eyeBot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eyeBot.png; sourceTree = "<group>"; };
+		A744E400217C8F0400048AE3 /* ROGoogleTranslate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ROGoogleTranslate.swift; sourceTree = "<group>"; };
+		A744E607217CA04100048AE3 /* TCPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCPickerView.swift; sourceTree = "<group>"; };
+		A744E609217CA04100048AE3 /* TCPickerViewLightTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCPickerViewLightTheme.swift; sourceTree = "<group>"; };
+		A744E60A217CA04100048AE3 /* TCPickerViewDarkTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCPickerViewDarkTheme.swift; sourceTree = "<group>"; };
+		A744E60B217CA04100048AE3 /* TCPickerViewThemeType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCPickerViewThemeType.swift; sourceTree = "<group>"; };
+		A744E60C217CA04100048AE3 /* TCPickerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCPickerTableViewCell.swift; sourceTree = "<group>"; };
+		A744E60E217CA04100048AE3 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		A744E616217CA46D00048AE3 /* GTProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GTProgressBar.swift; sourceTree = "<group>"; };
+		A744E617217CA46D00048AE3 /* HorizontalLabelPositionFrameCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalLabelPositionFrameCalculator.swift; sourceTree = "<group>"; };
+		A744E618217CA46D00048AE3 /* FrameCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrameCalculator.swift; sourceTree = "<group>"; };
+		A744E619217CA46D00048AE3 /* GTProgressBarLabelPosition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GTProgressBarLabelPosition.swift; sourceTree = "<group>"; };
+		A744E61A217CA46D00048AE3 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		A744E61B217CA46D00048AE3 /* GTProgressBarDirection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GTProgressBarDirection.swift; sourceTree = "<group>"; };
+		A744E61C217CA46D00048AE3 /* VerticalLabelPositionFrameCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticalLabelPositionFrameCalculator.swift; sourceTree = "<group>"; };
+		A744E61D217CA46D00048AE3 /* GTProgressBarCornerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GTProgressBarCornerType.swift; sourceTree = "<group>"; };
+		A744E61E217CA46D00048AE3 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		A744E61F217CA46D00048AE3 /* GTProgressBarOrientation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GTProgressBarOrientation.swift; sourceTree = "<group>"; };
+		A744E620217CA46D00048AE3 /* UILabelExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelExtensions.swift; sourceTree = "<group>"; };
 		E1941C5320B53CB4004A2217 /* DrawPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1941C5620B53CB4004A2217 /* AppDelegate.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1941C5820B53CB4004A2217 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +136,53 @@
 			path = CoreMLHelpers;
 			sourceTree = "<group>";
 		};
+		A744E606217CA04100048AE3 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A744E607217CA04100048AE3 /* TCPickerView.swift */,
+				A744E608217CA04100048AE3 /* Themes */,
+				A744E60C217CA04100048AE3 /* TCPickerTableViewCell.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		A744E608217CA04100048AE3 /* Themes */ = {
+			isa = PBXGroup;
+			children = (
+				A744E609217CA04100048AE3 /* TCPickerViewLightTheme.swift */,
+				A744E60A217CA04100048AE3 /* TCPickerViewDarkTheme.swift */,
+				A744E60B217CA04100048AE3 /* TCPickerViewThemeType.swift */,
+			);
+			path = Themes;
+			sourceTree = "<group>";
+		};
+		A744E60D217CA04100048AE3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A744E60E217CA04100048AE3 /* Media.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A744E615217CA46D00048AE3 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A744E616217CA46D00048AE3 /* GTProgressBar.swift */,
+				A744E617217CA46D00048AE3 /* HorizontalLabelPositionFrameCalculator.swift */,
+				A744E618217CA46D00048AE3 /* FrameCalculator.swift */,
+				A744E619217CA46D00048AE3 /* GTProgressBarLabelPosition.swift */,
+				A744E61A217CA46D00048AE3 /* .gitkeep */,
+				A744E61B217CA46D00048AE3 /* GTProgressBarDirection.swift */,
+				A744E61C217CA46D00048AE3 /* VerticalLabelPositionFrameCalculator.swift */,
+				A744E61D217CA46D00048AE3 /* GTProgressBarCornerType.swift */,
+				A744E61E217CA46D00048AE3 /* UIViewExtensions.swift */,
+				A744E61F217CA46D00048AE3 /* GTProgressBarOrientation.swift */,
+				A744E620217CA46D00048AE3 /* UILabelExtensions.swift */,
+			);
+			name = Classes;
+			path = "../../../GTProgressBar-master/GTProgressBar/Classes";
+			sourceTree = "<group>";
+		};
 		E1941C4A20B53CB4004A2217 = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +204,9 @@
 		E1941C5520B53CB4004A2217 /* DrawPad */ = {
 			isa = PBXGroup;
 			children = (
+				A744E606217CA04100048AE3 /* Classes */,
+				A744E615217CA46D00048AE3 /* Classes */,
+				A744E60D217CA04100048AE3 /* Resources */,
 				A728A928217C4B3D0006A8E5 /* Anchors.swift */,
 				A728A92A217C4B3D0006A8E5 /* CoreMLHelpers */,
 				A728A934217C4B3D0006A8E5 /* ssd_mobilenet_feature_extractor.mlmodel */,
@@ -129,6 +215,7 @@
 				A728A937217C4B3D0006A8E5 /* Assets.xcassets */,
 				A728A938217C4B3D0006A8E5 /* coco_labels_list.txt */,
 				A728A93C217C4B3D0006A8E5 /* Utility.swift */,
+				A744E400217C8F0400048AE3 /* ROGoogleTranslate.swift */,
 				A728A91F217C30710006A8E5 /* ComputerVisionOCR.h */,
 				A728A91E217C30710006A8E5 /* ComputerVisionOCR.swift */,
 				A728A91C217C2E210006A8E5 /* check.png */,
@@ -210,8 +297,10 @@
 				A744E3FB217C85BB00048AE3 /* Vocapture.png in Resources */,
 				A744E3FF217C8A3400048AE3 /* eyeBot.png in Resources */,
 				E1941C6120B53CB5004A2217 /* LaunchScreen.storyboard in Resources */,
+				A744E625217CA46D00048AE3 /* .gitkeep in Resources */,
 				A728A91D217C2E210006A8E5 /* check.png in Resources */,
 				A744E3FD217C866800048AE3 /* camera.png in Resources */,
+				A744E614217CA04100048AE3 /* Media.xcassets in Resources */,
 				E1941C5C20B53CB4004A2217 /* Main.storyboard in Resources */,
 				A744E3F9217C5B1100048AE3 /* back.png in Resources */,
 				A728A94D217C4B3D0006A8E5 /* Assets.xcassets in Resources */,
@@ -228,24 +317,40 @@
 			buildActionMask = 2147483647;
 			files = (
 				A728A951217C4B3D0006A8E5 /* Utility.swift in Sources */,
+				A744E60F217CA04100048AE3 /* TCPickerView.swift in Sources */,
 				E1941C5920B53CB4004A2217 /* ViewController.swift in Sources */,
+				A744E621217CA46D00048AE3 /* GTProgressBar.swift in Sources */,
+				A744E612217CA04100048AE3 /* TCPickerViewThemeType.swift in Sources */,
+				A744E624217CA46D00048AE3 /* GTProgressBarLabelPosition.swift in Sources */,
+				A744E401217C8F0400048AE3 /* ROGoogleTranslate.swift in Sources */,
+				A744E626217CA46D00048AE3 /* GTProgressBarDirection.swift in Sources */,
+				A744E628217CA46D00048AE3 /* GTProgressBarCornerType.swift in Sources */,
+				A744E610217CA04100048AE3 /* TCPickerViewLightTheme.swift in Sources */,
 				A728A947217C4B3D0006A8E5 /* CVPixelBuffer+Helpers.swift in Sources */,
 				A728A94A217C4B3D0006A8E5 /* ssd_mobilenet_feature_extractor.mlmodel in Sources */,
 				A728A943217C4B3D0006A8E5 /* Array.swift in Sources */,
 				A728A920217C30710006A8E5 /* ComputerVisionOCR.swift in Sources */,
 				A728A949217C4B3D0006A8E5 /* MLMultiArray+Image.swift in Sources */,
 				A728A944217C4B3D0006A8E5 /* BoundingBox.swift in Sources */,
+				A744E623217CA46D00048AE3 /* FrameCalculator.swift in Sources */,
 				A728A946217C4B3D0006A8E5 /* MultiArray.swift in Sources */,
 				A728A94C217C4B3D0006A8E5 /* SSDPostprocessor.swift in Sources */,
 				A728A945217C4B3D0006A8E5 /* Predictions.swift in Sources */,
 				A728A93F217C4B3D0006A8E5 /* Anchors.swift in Sources */,
 				E1941C5720B53CB4004A2217 /* AppDelegate.swift in Sources */,
+				A744E629217CA46D00048AE3 /* UIViewExtensions.swift in Sources */,
 				E1941C6B20B54914004A2217 /* Pencil.swift in Sources */,
+				A744E62A217CA46D00048AE3 /* GTProgressBarOrientation.swift in Sources */,
 				E1941C6920B544E8004A2217 /* SettingsViewController.swift in Sources */,
 				A728A942217C4B3D0006A8E5 /* UIImage+CVPixelBuffer.swift in Sources */,
 				A728A94B217C4B3D0006A8E5 /* SSDViewController.swift in Sources */,
+				A744E611217CA04100048AE3 /* TCPickerViewDarkTheme.swift in Sources */,
 				A728A948217C4B3D0006A8E5 /* NonMaxSuppression.swift in Sources */,
 				A728A941217C4B3D0006A8E5 /* Math.swift in Sources */,
+				A744E613217CA04100048AE3 /* TCPickerTableViewCell.swift in Sources */,
+				A744E62B217CA46D00048AE3 /* UILabelExtensions.swift in Sources */,
+				A744E627217CA46D00048AE3 /* VerticalLabelPositionFrameCalculator.swift in Sources */,
+				A744E622217CA46D00048AE3 /* HorizontalLabelPositionFrameCalculator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

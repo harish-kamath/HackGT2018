@@ -28,7 +28,14 @@
 
 import UIKit
 
+
+struct Language {
+  var name: String
+  var abbreviation: String
+}
+
 class ViewController: UIViewController {
+  
   
   @IBOutlet weak var mainImageView: UIImageView!
   @IBOutlet weak var tempImageView: UIImageView!
@@ -40,6 +47,7 @@ class ViewController: UIViewController {
   
   var label: String = ""
   var isCorrect: Bool = false
+  var pureLabel: String = ""
   
   var lastPoint = CGPoint.zero
   var color = UIColor.black
@@ -47,7 +55,16 @@ class ViewController: UIViewController {
   var opacity: CGFloat = 1.0
   var swiped = false
   
+  func setText(){
+    IBLabel.text = self.label
+  }
+  
+ 
+  
   override func viewDidLoad() {
+    
+
+    
     ComputerVisionOCR.shared.configure(
       apiKey:"bc5a9dfb6d5e4fae8cc289324cde1350",
       baseUrl: "https://eastus.api.cognitive.microsoft.com/vision/v2.0")
@@ -71,6 +88,21 @@ class ViewController: UIViewController {
   
   override func viewWillAppear(_ animated: Bool) {
     let s  = self.presentingViewController as! SSDViewController
+    
+    
+    let p = ROGoogleTranslateParams(source: "en",
+                                    target: s.lang.abbreviation,
+                                    text: self.label)
+    let t = ROGoogleTranslate(with: "AIzaSyD7H6toyXC7MSVsvadtWX5VQ_5NzmP1524")
+    t.translate(params: p){(result) in
+      self.pureLabel = self.label
+      self.label  = self.label.capitalizingFirstLetter() + " :: "+result
+      print("Translated")
+      print(self.label)
+      DispatchQueue.main.async {
+        self.setText()
+      }
+    }
     
     IBLabel.isHidden = !(s.words[label]! <= 0)
   }
@@ -121,8 +153,6 @@ class ViewController: UIViewController {
   }
   
   @objc @IBAction func endPresent(){
-    let s  = self.presentingViewController as! SSDViewController
-    s.words[label]! = (isCorrect) ? s.words[label]! + 1 : ((s.words[label]! < -3) ? -3 : s.words[label]! - 1)
     self.dismiss(animated: true, completion: nil)
   }
   
@@ -138,7 +168,7 @@ class ViewController: UIViewController {
       debugPrint(parseResult) // Each line is a String in the resulting array
     }
     while(ComputerVisionOCR.shared.label == ""){}
-    print("Found entry!")
+    print("Found entry! \(ComputerVisionOCR.shared.previousLabel)")
     finishedDraw()
     
   }
@@ -147,9 +177,10 @@ class ViewController: UIViewController {
     IBLabel.isHidden = false
     
     let entered = ComputerVisionOCR.shared.previousLabel.uppercased()
-    let correct = label.uppercased()
-    print(entered)
-    print(correct)
+    let correct = pureLabel.uppercased()
+    
+    print("Entered: \(entered)")
+    print("Correct: \(correct)")
     
     if(entered == correct){
       self.mainImageView.backgroundColor = UIColor.green
@@ -161,6 +192,17 @@ class ViewController: UIViewController {
       ICLabel.isHidden = false
       isCorrect = false
     }
+    
+    let s  = self.presentingViewController as! SSDViewController
+    
+    if(isCorrect && s.words[pureLabel]! <= 0){
+      s.progressBar.progress = s.progressBar.progress + 0.02
+    }else if(!(isCorrect) && s.words[pureLabel]! > 0){
+      s.progressBar.progress = s.progressBar.progress - 0.02
+    }
+    
+    s.words[pureLabel]! = (isCorrect) ? s.words[pureLabel]! + 1 : ((s.words[pureLabel]! < -3) ? -3 : s.words[pureLabel]! - 1)
+    
     
     self.mainImageView.alpha = 0.4
     startTimer()

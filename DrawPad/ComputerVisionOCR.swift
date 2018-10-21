@@ -16,6 +16,7 @@ open class ComputerVisionOCR {
   var responseCode: Int = 0
   var label: String = ""
   var previousLabel: String = ""
+  var translate:String = ""
   var cou: Int = 0
 	
 	private init() {}
@@ -98,6 +99,7 @@ open class ComputerVisionOCR {
         self.cou = self.cou + 1
       }
       else{
+        
         print("LABEL")
         print(self.label)
         self.previousLabel = self.label

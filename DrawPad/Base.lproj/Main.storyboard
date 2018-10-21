@@ -62,7 +62,7 @@
                                 <rect key="frame" x="289" y="0.0" width="86" height="667"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f45-72-9nr">
-                                        <rect key="frame" x="-168" y="262" width="422" height="143"/>
+                                        <rect key="frame" x="-286" y="262" width="650" height="143"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="48"/>
                                         <nil key="textColor"/>
@@ -158,7 +158,7 @@
                                 <rect key="frame" x="0.0" y="618" width="375" height="49"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ebi-69-qjY">
-                                        <rect key="frame" x="8" y="9" width="309" height="31"/>
+                                        <rect key="frame" x="8" y="9" width="311" height="31"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="31" id="HAT-gC-nSS"/>
                                         </constraints>
@@ -166,22 +166,32 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eyeBot.png" translatesAutoresizingMaskIntoConstraints="NO" id="xnN-jg-Ymn">
-                                        <rect key="frame" x="327" y="4" width="40" height="40"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aqt-BL-2XI">
+                                        <rect key="frame" x="327" y="4.5" width="40" height="40"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="0w1-e5-nqd"/>
-                                            <constraint firstAttribute="width" constant="40" id="Gsl-uu-Ay8"/>
+                                            <constraint firstAttribute="height" constant="40" id="1kb-eV-YqR"/>
+                                            <constraint firstAttribute="width" constant="40" id="EFN-dJ-N1m"/>
                                         </constraints>
-                                    </imageView>
+                                        <state key="normal" image="eyeBot.png"/>
+                                        <connections>
+                                            <action selector="setLanguage:" destination="kSS-hh-mpJ" eventType="touchUpInside" id="y02-mZ-esy"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="ebi-69-qjY" firstAttribute="leading" secondItem="tJJ-N1-xVn" secondAttribute="leading" constant="8" id="0Ev-Lg-3Xr"/>
-                                    <constraint firstItem="xnN-jg-Ymn" firstAttribute="leading" secondItem="ebi-69-qjY" secondAttribute="trailing" constant="10" id="Brv-ze-c6X"/>
-                                    <constraint firstAttribute="trailing" secondItem="xnN-jg-Ymn" secondAttribute="trailing" constant="8" id="C8s-GC-lQR"/>
+                                    <constraint firstAttribute="trailing" secondItem="Aqt-BL-2XI" secondAttribute="trailing" constant="8" id="T93-ui-BRt"/>
                                     <constraint firstItem="ebi-69-qjY" firstAttribute="centerY" secondItem="tJJ-N1-xVn" secondAttribute="centerY" id="e8R-pV-Mxq"/>
-                                    <constraint firstItem="xnN-jg-Ymn" firstAttribute="centerY" secondItem="tJJ-N1-xVn" secondAttribute="centerY" id="emr-La-tuO"/>
+                                    <constraint firstItem="Aqt-BL-2XI" firstAttribute="centerY" secondItem="tJJ-N1-xVn" secondAttribute="centerY" id="m93-c3-7qQ"/>
+                                    <constraint firstItem="Aqt-BL-2XI" firstAttribute="leading" secondItem="ebi-69-qjY" secondAttribute="trailing" constant="8" id="qmb-uv-vyf"/>
                                     <constraint firstAttribute="height" constant="49" id="zTV-Ky-OgS"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kXi-A0-iR1" customClass="GTProgressBar" customModule="ComoSeDice" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="24" width="375" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="eHs-NV-bka"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -189,9 +199,12 @@
                         <constraints>
                             <constraint firstItem="5dD-wu-29v" firstAttribute="trailing" secondItem="P0N-jf-cOR" secondAttribute="trailing" id="0xv-xc-xQn"/>
                             <constraint firstItem="5dD-wu-29v" firstAttribute="bottom" secondItem="P0N-jf-cOR" secondAttribute="bottom" id="2p7-2l-b2e"/>
+                            <constraint firstItem="kXi-A0-iR1" firstAttribute="leading" secondItem="5dD-wu-29v" secondAttribute="leading" id="6wc-y5-Oxj"/>
                             <constraint firstItem="P0N-jf-cOR" firstAttribute="leading" secondItem="5dD-wu-29v" secondAttribute="leading" id="7X9-Zw-mIB"/>
+                            <constraint firstItem="kXi-A0-iR1" firstAttribute="trailing" secondItem="5dD-wu-29v" secondAttribute="trailing" id="7dR-rz-k4X"/>
                             <constraint firstItem="tJJ-N1-xVn" firstAttribute="leading" secondItem="5dD-wu-29v" secondAttribute="leading" id="VTR-M9-e2s"/>
                             <constraint firstItem="P0N-jf-cOR" firstAttribute="top" secondItem="5dD-wu-29v" secondAttribute="top" id="YdK-r4-W62"/>
+                            <constraint firstItem="kXi-A0-iR1" firstAttribute="top" secondItem="5dD-wu-29v" secondAttribute="top" constant="4" id="bw3-nT-It2"/>
                             <constraint firstItem="tJJ-N1-xVn" firstAttribute="trailing" secondItem="5dD-wu-29v" secondAttribute="trailing" id="neh-UN-amj"/>
                             <constraint firstItem="5dD-wu-29v" firstAttribute="bottom" secondItem="tJJ-N1-xVn" secondAttribute="bottom" id="tgH-ZS-CFw"/>
                         </constraints>
@@ -202,6 +215,7 @@
                     <connections>
                         <outlet property="cameraView" destination="P0N-jf-cOR" id="NsD-Ik-8B2"/>
                         <outlet property="frameLabel" destination="f8t-KA-DJf" id="u71-cn-i79"/>
+                        <outlet property="progressBar" destination="kXi-A0-iR1" id="c94-pI-bYB"/>
                         <outlet property="wrongLabel" destination="ebi-69-qjY" id="5bn-S4-DoW"/>
                     </connections>
                 </viewController>

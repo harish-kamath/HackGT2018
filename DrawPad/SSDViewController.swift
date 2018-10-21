@@ -12,7 +12,13 @@ import Vision
 import AVFoundation
 import Accelerate
 
+
 class SSDViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate, UIGestureRecognizerDelegate {
+  var lang = Language(name: "Spanish", abbreviation: "es")
+  
+  
+  let languages = [Language(name: "Irish", abbreviation: "ga"), Language(name: "Italian", abbreviation: "it"), Language(name: "Spanish", abbreviation: "es"), Language(name: "German", abbreviation: "de"), Language(name: "Turkish", abbreviation: "tr"), Language(name: "Vietnamese", abbreviation: "vi"), Language(name: "Swahili", abbreviation: "sw"), Language(name: "Portuguese", abbreviation: "pt")]
+  
   var words: [String: Int] =  Dictionary(uniqueKeysWithValues: """
 ???
 person
@@ -99,6 +105,7 @@ toothbrush
   
     @IBOutlet weak var cameraView: UIView!
     @IBOutlet weak var frameLabel: UILabel!
+  @IBOutlet weak var progressBar:GTProgressBar!
   @IBOutlet weak var wrongLabel: UILabel!
     let semaphore = DispatchSemaphore(value: 1)
     var lastExecution = Date()
@@ -142,7 +149,13 @@ toothbrush
       
     }
     else{
-      wrongLabel.text = "Revisit a word."
+      let puns = ["Language. Learning. Literacy",
+      "Word a day == teacher away",
+      "Keep learning!",
+      "Revisit a word",
+      "Almost at 10000 hours!"]
+      let ind = Int.random(in:0..<5)
+      wrongLabel.text = puns[ind]
     }
   }
     
@@ -180,6 +193,17 @@ toothbrush
     
     override func viewDidLoad() {
         super.viewDidLoad()
+      progressBar.progress = 0
+      progressBar.barBorderColor = UIColor(red:0.35, green:0.80, blue:0.36, alpha:1.0)
+      progressBar.barFillColor = UIColor(red:0.35, green:0.80, blue:0.36, alpha:1.0)
+      progressBar.barBackgroundColor = UIColor(red:0.77, green:0.93, blue:0.78, alpha:1.0)
+      progressBar.barBorderWidth = 1
+      progressBar.barFillInset = 2
+      progressBar.displayLabel = false
+      progressBar.labelTextColor = UIColor(red:0.35, green:0.80, blue:0.36, alpha:1.0)
+      progressBar.progressLabelInsets = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5)
+      
+      
         let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleTap))
         tap.delegate = self // This is not required
         self.cameraView.addGestureRecognizer(tap)
@@ -309,6 +333,25 @@ toothbrush
             
         }
     }
+  
+  @IBAction func setLanguage(_ sender:Any){
+    var picker: TCPickerViewInput = TCPickerView()
+    picker.title = "Language"
+    var values = languages.map{TCPickerView.Value(title: $0.name, isChecked: ($0.name == self.lang.name))}
+    picker.values = values
+    picker.delegate = self as? TCPickerViewOutput
+    picker.selection = .single
+    picker.completion = { (selectedIndexes) in
+      for i in selectedIndexes {
+        for l in self.languages{
+          if(l.name == values[i].title){
+            self.lang = l
+          }
+        }
+      }
+    }
+    picker.show()
+  }
 
     func sigmoid(_ val:Double) -> Double {
          return 1.0/(1.0 + exp(-val))
