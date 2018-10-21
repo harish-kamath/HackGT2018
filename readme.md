@@ -1,3 +1,5 @@
+### NOTE: The Azure and Google Cloud API service accounts we set up were quickly shut down after the competition to prevent anyone from using our account APIs. If you want to use this project, you will have to enter your own Azure and Cloud API keys.
+
 ## Inspiration
 We started off exploring the idea of handwriting detection in order to help aid students with language acquisition and written skills. We decided to broaden the scope of the problem to include anyone looking to learn English in a less traditional manner and who can benefit from object to text recognition. This also includes those who disabled, like the deaf as they get do not get to hear the word being pronounced and need some way to associate the word to the object. With a current shortage of English teachers, this app will help solve an essential problem in education as it will give more people an opportunity to develop their language ability.
 
